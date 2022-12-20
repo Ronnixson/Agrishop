@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>market products</title>
+    <style>
+        .wrap{
+            background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+        }
+        .card{
+            background:#fff;
+            margin:25px 20px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.30), 1 11px 8px rgba(0,0,0,0.20);
+            width: 250px;
+            box-sizing: border-box;
+            transition-duration:0.5s;
+            border:2px solid grey;
+            display: inline-block;
+            margin:30px;
+            border-radius:14px;
+        }
+        .card > img{
+            max-width:100%;
+            height: auto;
+            margin:0;
+        }
+        .card > p{
+            font-family: sans-serif;
+            padding:0 10px 10px 10px;
+            text-align: center;
+        }
+        .card:hover{
+            box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.20);
+            width: 270px;
+        }
+        img{
+            height:150px;
+            width: 160px;
+        }
+    </style>
+    <link rel="stylesheet" href="contact.css">
+    
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="images/logo.jpg" class="logo">
+            <span>e-Katale...</span>
+            <ul>
+                <li> <a href="home.html">Home</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+                <li> <a href="gallery.html">Gallery</a></li>
+                <li> <a href="Farmers.html">Farmers</a></li>
+            </ul>
+            <button  type="button" value="btn" >Check-Out</button>
+        </nav>
+    </div>
+    <div class="wrap">
+    <div class="card">
+        <img src="images/cabbage.jpg">
+        <span style="background-color:#000;color:#fff;font-weight: bolder; padding:8px 10px;">CABBAGE</span>
+        <p>These are some of the products that our farmers grow and of which they fit into the local market</p>
+        <button id="btn" onclick="but()">Add to cart</button><button id="sell">Contact</button>
+    </div>
+    <div class="card">
+        <img src="images/cocoa.jpg">
+        <span style="background-color:#000;color:#fff;font-weight: bolder; padding:8px 10px;">COCOA SEEDS</span>
+        <p>These are on some the products that our farmers grow and they fit into the local market</p>
+        <button id="btn" onclick="but()">Add to cart</button><button id="sell">Contact</button>
+    </div>
+    <div class="card">
+        <img src="images/tea.jpg">
+        <span style="background-color:#000;color:#fff;font-weight: bolder; padding:8px 10px;">TEA</span>
+        <p>These are some of the products that our farmers grow and they fit into the local market</p>
+        <button id="btn" onclick="but()">Add to cart</button><button id="sell">Contact</button>
+    </div>
+    <div class="card">
+        <img src="images/mangoes.jpg">
+        <span style="background-color:#000;color:#fff;font-weight: bolder; padding:8px 10px;">MANGOES</span>
+        <p>These are some of the products that our farmers grow and they fit into the local market</p>
+        <button id="btn" onclick="but()">Add to cart</button><button id="sell">Contact</button>
+    </div>
+    <div class="card">
+        <img src="images/matokke.jpg">
+        <span style="background-color:#000;color:#fff;font-weight: bolder; padding:8px 10px;">BANANAS/MATOOKE</span>
+        <p>These are some of the products that our farmers grow and they fit into the local market</p>
+        <button id="btn" onclick="but()">Add to cart</button><button id="sell">Contact</button>
+    </div>
+    <div class="card">
+        <img src="images/coffee 3.jpg">
+        <span style="background-color:#000;color:#fff;font-weight: bolder; padding:8px 10px;">COFFEE</span>
+        <p>These are some of the products that our farmers grow and they fit into the local market</p>
+        <button id="btn" onclick="but()">Add to cart</button><button id="sell">Contact</button>
+    </div>
+    <div class="card">
+        <img src="images/onions.jpg">
+        <span style="background-color:#000;color:#fff;font-weight: bolder; padding:8px 10px;">ONIONS</span>
+        <p>These are some of the products that our farmers grow and they fit into the local market</p>
+        <button id="btn" onclick="but()">Add to cart</button><button id="sell">Contact</button>
+    </div>
+    <div class="card">
+        <img src="images/pineapples.jpg">
+        <span style="background-color:#000;color:#fff;font-weight: bolder; padding:8px 10px;">PINEAPPLES</span>
+        <p>These are some of the products that our farmers grow and they fit into the local market</p>
+        <button id="btn" onclick="but()">Add to cart</button><button id="sell">Contact</button>
+    </div>
+    <div class="card">
+        <img src="images/tobacco.jpg">
+        <span style="background-color:#000;color:#fff;font-weight: bolder; padding:8px 10px;">TOBACCO</span>
+        <p>These are some of the products that our farmers grow and they fit into the local market</p>
+        <button id="btn" onclick="but()">Add to cart</button><button id="sell">Contact</button>
+    </div>
+    <div class="card">
+        <img src="images/tomatoes.jpg">
+        <span style="background-color:#000;color:#fff;font-weight: bolder; padding:8px 10px;">TOMATOES</span>
+        <p>These are some of the products that our farmers grow and they fit into the local market</p>
+        <button id="btn" onclick="but()">Add to cart</button><button id="sell">Contact</button>
+    </div>
+    <div class="card">
+        <img src="images/passion.jpg">
+        <span style="background-color:#000;color:#fff;font-weight: bolder; padding:8px 10px;">PASSION FRUIT</span>
+        <p>These are some of the products that our farmers grow and they fit into the local market</p>
+        <button id="btn" onclick="but()">Add to cart</button><button id="sell">Contact</button>
+    </div>
+    <div class="card">
+        <img src="images/Yam.jpg">
+        <span style="background-color:#000;color:#fff;font-weight: bolder; padding:8px 10px;">YAMS</span>
+        <p>These are some of the products that our farmers grow and they fit into the local market</p>
+        <button id="btn" onclick="but()">Add to cart</button><button id="sell">Contact</button>
+    </div>
+    </div>
+    <footer>
+        <p>&copy:Mutalya Ronnie<br>
+        <a href="mailto:ronniemutalya36@gmail.com">ronniemutalya36@gmail.com</a></p><br>
+        <a href="tel:+256776058193">+256708839637</a>----------<a href="tel:+256776058193">+256776058193</a>
+        </footer>
+    <script>
+        function but(){
+            alert("Item added to Cart")
+        }
+    </script>
+
+</body>
+</html>

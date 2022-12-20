@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+.header{
+    width: 100%;
+    border-bottom-left-radius:12px;
+    border-bottom-right-radius:12px;
+    border-bottom:3px solid rgb(236, 250, 236);
+}
+nav{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin-left:3rem;
+    margin-right: 3rem;
+}
+.logo{
+    height:100px;
+    width: 100px;
+    border-radius: 40px;
+    border-bottom:5px solid orange;
+    transition-duration:1s;
+}
+li{
+    list-style:none;
+    display: inline-block;
+    margin:15px;
+}
+span{
+    font-style:oblique;
+    color: orangered;
+}
+a{
+    text-decoration: none;
+    font-size:large;
+    color: black;
+}
+a:hover{
+    transition: .5s;
+    background:rgb(33, 124, 33);
+    color: white;
+    padding:10px 13px;
+    border-radius:16px;
+}
+button{
+    padding: 6px 8px;
+    border-radius: 20px;
+    border: 1px solid rgb(44, 129, 44);
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#fff;
+    color:rgb(8, 107, 8);
+    font-weight: bold;
+}
+#btn{
+    background-color:greenyellow;
+}
+#sell{
+    color: #fff;
+    margin-left:3.9rem;
+    background-color:brown;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background:url(images/shop.png);
+    background-position:center;
+    background-repeat: no-repeat;
+}
+h1{
+    text-align: center;
+    color:orange;
+}
+select{
+    padding: 6px 8px;
+    border-radius:18px;
+}
+input[type=text]{
+    padding:6px 8px;
+    border: 1px solid grey;
+    width:20%;
+    border-radius: 18px;
+}
+input[type=password]{
+    padding:6px 8px;
+    border: 1px solid grey;
+    border-radius: 18px;
+}
+input[type=submit]{
+    padding:6px 8px;
+    border: 1px solid rgb(39, 141, 39) ;
+    border-radius:18px;
+    width:100px;
+    background:rgb(28, 172, 28);
+    color: #fff;
+}
+input[type=reset]{
+    padding:6px 8px;
+    border: 1px solid rgb(233, 36, 36);
+    border-radius:18px;
+    width: 100px;
+    color: whitesmoke;
+    background-color:rgb(212, 87, 87);
+}
+input[type=number]{
+    padding:6px 8px;
+    border: 1px solid grey;
+    width: 20%;
+    border-radius:18px;
+}
+form{
+    text-align: center;
+    background:linear-gradient(orange,rgba(0,0,0,0.5));
+    border: 1px solid white;
+    border-radius:13px;
+    position: relative;
+    padding-top: 15px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color:white;
+}
+img{
+    width:200px;
+    height: 200px;
+    box-shadow:4px 4px 4px 4px orange;
+    border-radius:50%;
+    margin: 2rem;
+    border-bottom:5px solid orange;
+    transition:.6s;
+}
+img:hover{
+transform:rotateY(140deg);
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    background:linear-gradient(60deg,green,yellow);
+    color: white
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    
+    header{
+        padding:1rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+
+}
+
+@media (max-width:768px){
+
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top:100%; left:0; right:0;
+        background:#fff;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding:1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        padding:1.5rem;
+        margin:1rem;
+        font-size: 2rem;
+        background:#eee;
+    }
+
+    #search-form #search-box{
+        width:90%;
+        margin:0 1rem;
+    }
+
+    .home .home-slider .slide .content h3{
+        font-size: 5rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+    nav{
+        display: inline-block;
+        margin-left:50px;
+    }
+    #ck{
+        display:none;
+    }
+    .logo{
+        display: none;
+    }
+    #e-{
+        font-size:20px;
+    }
+    img{
+        height:80px;
+        width: 80px;
+    }
+    .container{
+        background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/shop.png);
+        background-position:center;
+        background-repeat:no-repeat;
+    }
+    form{
+        margin:0;
+        top:20%;
+    }
+    input[type=text]{
+        width:70%;
+    }
+    input[type=number]{
+        width:70%;
+    }
+
+}
